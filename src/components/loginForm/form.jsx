@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Row, Col, Button, Image } from 'react-bootstrap';
-import Divider from '../divider'; // Assumindo que você tem esse componente
+import Divider from '../divider/divider';
 
 function FormLogin() {
   return (
