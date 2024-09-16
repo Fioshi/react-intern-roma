@@ -1,0 +1,10 @@
+.image-col {
+    padding: 0; /* Remove o padding do lado da imagem */
+  }
+  
+  .full-height-image {
+    height: 100vh; /* 100% da altura da viewport */
+    object-fit: cover; /* Para cobrir toda a área sem distorcer a imagem */
+    width: 100%;
+  }
+  
