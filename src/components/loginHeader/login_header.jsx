@@ -2,14 +2,14 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import './login_header.css'
 
-function LoginHeader({ title, subtitle, alt }) {
+function LoginHeader({imagePath ,title, subtitle, alt }) {
     return (
         <>
             <section>
                 <h1
                     className='h1-header fw-bolder p-2 fs-2'>
                     <img
-                        src='src\assets\usuarios-alt.png'
+                        src={imagePath}
                         className='m-1'
                         alt={alt} />
                     {title}

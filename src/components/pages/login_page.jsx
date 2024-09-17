@@ -8,6 +8,9 @@ import LoginHeader from '../loginHeader/login_header';
 import './login_page.css';
 import LoginFooter from '../loginFooter/login_footer';
 
+import prediosLogin from '../../assets/pexels-paul-loh-65233-233698.jpg'
+import logoGenericCorp from '../../assets/usuarios-alt.png'
+
 function MyComponent() {
     return (
         <main>
@@ -16,7 +19,7 @@ function MyComponent() {
                 <Row
                     className='justify-content-center'>
                     <ImageForm
-                        caminhoImagem={'src/assets/pexels-paul-loh-65233-233698.jpg'}
+                        caminhoImagem={prediosLogin}
                         alt={"Imagens de prédios da tela de login"}>
                     </ImageForm>
                     <Col
@@ -26,6 +29,7 @@ function MyComponent() {
                             className='w-75 justify-content-center align-items-center'>
                             <header>
                                 <LoginHeader
+                                    imagePath={logoGenericCorp}
                                     title={"Generic Corp"}
                                     subtitle={"Nice to see you again"} />
                             </header>
@@ -33,7 +37,7 @@ function MyComponent() {
                             <footer
                                 className='text-center mt-5'>
                                 <LoginFooter
-                                    imagePath={"src/assets/usuarios-alt.png"}
+                                    imagePath={logoGenericCorp}
                                     title={"Generic Corp"}
                                     description={"Logo da Generic Corp"} />
                             </footer>

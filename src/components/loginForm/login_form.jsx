@@ -3,6 +3,8 @@ import { Form, Row, Col, Button, Image } from 'react-bootstrap';
 import Divider from '../divider/divider';
 import "../loginForm/login_form.css"
 
+import googleLogo from '../../assets/google.png';
+
 function FormLogin() {
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -88,7 +90,7 @@ function FormLogin() {
         size="sm"
         className='w-100'>
         <Image
-          src='src\assets\google.png'
+          src={googleLogo}
           className='p-1' />
         Or sign in with Google
       </Button>
