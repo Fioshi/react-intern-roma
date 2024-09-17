@@ -77,6 +77,7 @@ function FormLogin() {
       <Button
         type='submit'
         variant="primary"
+        aria-describedby='Botão de login padrão, após informar email e senha'
         size="sm"
         className='btn-effect custom-btn w-100'>
         Sign in
@@ -87,6 +88,7 @@ function FormLogin() {
 
       <Button
         variant="dark"
+        aria-describedby='Botão de login com google'
         size="sm"
         className='w-100'>
         <Image
