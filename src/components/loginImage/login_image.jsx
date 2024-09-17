@@ -8,7 +8,7 @@ function ImageForm({caminhoImagem, alt}) {
         <Col
             sm={8}
             className="image-col">
-            <Image  
+            <img  
                 src={caminhoImagem}
                 fluid
                 className="full-height-image"

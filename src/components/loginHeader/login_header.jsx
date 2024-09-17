@@ -1,14 +1,14 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
-import '../loginHeader/login_header.css'
+import './login_header.css'
 
 function LoginHeader({ title, subtitle, alt }) {
     return (
         <>
-            <header>
+            <section>
                 <h1
                     className='h1-header fw-bolder p-2 fs-2'>
-                    <Image
+                    <img
                         src='src\assets\usuarios-alt.png'
                         className='m-1'
                         alt={alt} />
@@ -18,7 +18,7 @@ function LoginHeader({ title, subtitle, alt }) {
                     className='h2-header fw-bolder p-1 fs-4'>
                     {subtitle}
                 </h2>
-            </header>
+            </section>
         </>
     )
 }
