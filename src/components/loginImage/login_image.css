@@ -1,10 +1,16 @@
 .image-col {
-    padding: 0; /* Remove o padding do lado da imagem */
-  }
-  
+  padding: 0;
+}
+
+.full-height-image {
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media only screen and (max-width: 575px) {
   .full-height-image {
-    height: 100vh; /* 100% da altura da viewport */
-    object-fit: cover; /* Para cobrir toda a área sem distorcer a imagem */
-    width: 100%;
+    display: none;
+    overflow: hidden;
   }
-  
+}

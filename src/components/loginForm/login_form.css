@@ -1,0 +1,24 @@
+.custom-btn {
+    transition: 1s;
+}
+
+.custom-btn:hover{
+    background-color: rgb(12, 9, 63);
+    color: white;
+}
+
+@media only screen and (max-width: 575px) {
+    .form {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-email, .form-password{
+        margin-top: 2em;
+    }
+    
+    .label-email, .label-password {
+        display: none;
+    }
+}
