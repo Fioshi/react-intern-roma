@@ -1,6 +1,8 @@
 
 # Título do Projeto
 
+> Finalizado
+
 Projeto para processo seletivo de front-end da Roma.
 Foi escolhido o react como framework para desenvolvimento. Apesar de também ter stack em **angular**, decide que usaria o react por conta de ser uma opção mais focada em UI e UX, que parece ser mais adequado visto que a aplicação seria para o usúario comum
 
