@@ -1,33 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Row, Col, Button, Image } from 'react-bootstrap';
 import Divider from '../divider/divider';
+import "../loginForm/login_form.css"
 
 function FormLogin() {
+
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
-    <Form>
+    <Form className='form'>
       <Form.Label
-        className='mt-4'
+        className='label-email mt-4'
         htmlFor="inputEmail">
         Login
       </Form.Label>
       <Form.Control
+      className='form-email'
         type="email"
         id="inputEmail"
-        aria-describedby="emailHelBlock"
-        placeholder='Email or phone number'
-      />
+        aria-describedby="Campo de email do formulario"
+        placeholder='Email'
+        value={email}
+        onChange={handleEmailChange}
+        isInvalid={!email.match(emailRegex) && email.length > 1 ? true : false}
+        isValid={email.match(emailRegex) ? true : false} />
+
 
       <Form.Label
-        className='mt-4'
+        className='label-password mt-4'
         htmlFor="inputPassword">
         Password
       </Form.Label>
       <Form.Control
+      className='form-password'
         type="password"
         id="inputPassword"
-        aria-describedby="passwordHelpBlock"
+        aria-describedby="Campo de senha do formulario"
         placeholder='Enter password'
-      />
+        value={password}
+        onChange={handlePasswordChange}
+        isInvalid={password.length >= 1 && password.length < 6}
+        isValid={password.length >= 6 ? true : false} />
 
       <Row
         className="mt-3 mb-3 w-100 d-flex justify-content-between align-items-center">
@@ -42,14 +66,17 @@ function FormLogin() {
         </Col>
         <Col
           xs="auto">
-          <a href="">Forget Password?</a>
+          <a
+            className='text-decoration-none'
+            href="">Forget Password?</a>
         </Col>
       </Row>
 
       <Button
+        type='submit'
         variant="primary"
         size="sm"
-        className='w-100'>
+        className='custom-btn w-100'>
         Sign in
       </Button>
 
