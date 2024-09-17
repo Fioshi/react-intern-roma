@@ -1,4 +1,4 @@
-import LoginScreen from '../src/components/pages/loginPage'
+import LoginScreen from '../src/components/pages/login_page'
 import './App.css'
 
 function App() {

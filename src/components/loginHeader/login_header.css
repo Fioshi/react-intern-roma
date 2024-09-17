@@ -1,12 +1,16 @@
-header{
-    position: relative !important; 
-}
-
 @media only screen and (max-width: 575px) {
 
+    header{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
     .h1-header {
-      position: absolute !important;
-      top: 20em;
-      left: 1.5em;
+       display: none;
+    }
+
+    .h2-header {
+        margin-top: 5rem;
     }
   }
