@@ -78,7 +78,7 @@ function FormLogin() {
         type='submit'
         variant="primary"
         size="sm"
-        className='custom-btn w-100'>
+        className='btn-effect custom-btn w-100'>
         Sign in
       </Button>
 
